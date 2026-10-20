@@ -1,0 +1,40 @@
+.wadah {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform var(--transisi-halus);
+}
+
+.standar {
+  width: auto;
+  height: 220px;
+  max-width: 100%;
+  filter: drop-shadow(0 10px 18px rgba(20, 28, 25, 0.08));
+  transition: transform var(--transisi-halus), filter var(--transisi-halus);
+}
+
+.besar {
+  width: auto;
+  height: 380px;
+  max-width: 100%;
+  filter: drop-shadow(0 16px 28px rgba(20, 28, 25, 0.12));
+  transition: transform var(--transisi-halus), filter var(--transisi-halus);
+}
+
+.kecil {
+  width: auto;
+  height: 64px;
+  filter: drop-shadow(0 3px 6px rgba(20, 28, 25, 0.06));
+}
+
+.botol {
+  width: auto;
+  height: 220px;
+}
+
+@media (max-width: 768px) {
+  .besar {
+    height: 300px;
+  }
+}

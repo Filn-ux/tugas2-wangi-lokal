@@ -1,0 +1,291 @@
+.wadahKoleksi {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Header */
+.kepala {
+  background: var(--putih);
+  border: 1px solid var(--garis);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  box-shadow: var(--bayangan-halus);
+}
+
+.kepalaInfo {
+  max-width: 65ch;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.lencanaKoleksi {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  color: var(--nilam);
+}
+
+.kepala h1 {
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  color: var(--tinta);
+  line-height: 1.1;
+}
+
+.deskripsiKepala {
+  font-size: 1.05rem;
+  color: var(--tinta-muda);
+  line-height: 1.6;
+}
+
+/* Toolbar */
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  padding: 1.2rem 1.4rem;
+  background: var(--putih);
+  border: 1px solid var(--garis);
+  border-radius: var(--radius-md);
+  box-shadow: var(--bayangan-halus);
+}
+
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tab {
+  text-decoration: none;
+  padding: 0.5rem 1.1rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--garis);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--tinta-muda);
+  background: var(--kapur);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  transition: all var(--transisi-cepat);
+}
+
+.tab:hover {
+  background: var(--garis);
+  color: var(--tinta);
+}
+
+.aktif {
+  background: var(--nilam) !important;
+  border-color: var(--nilam) !important;
+  color: var(--putih) !important;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(90, 47, 76, 0.25);
+}
+
+.hitungBadge {
+  font-size: 0.72rem;
+  background: rgba(0, 0, 0, 0.08);
+  padding: 0.1rem 0.45rem;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+}
+
+.aktif .hitungBadge {
+  background: rgba(255, 255, 255, 0.25);
+  color: var(--putih);
+}
+
+/* Action Controls (Search & Sort) */
+.kontrolAksi {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.pencarianWadah {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.ikonCari {
+  position: absolute;
+  left: 0.75rem;
+  font-size: 0.85rem;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.inputCari {
+  padding: 0.55rem 2rem 0.55rem 2.2rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--garis);
+  background: var(--kapur);
+  font-size: 0.88rem;
+  color: var(--tinta);
+  width: 240px;
+  transition: all var(--transisi-cepat);
+}
+
+.inputCari:focus {
+  outline: none;
+  border-color: var(--vetiver);
+  background: var(--putih);
+  box-shadow: 0 0 0 3px rgba(45, 74, 55, 0.15);
+  width: 270px;
+}
+
+.resetCari {
+  position: absolute;
+  right: 0.6rem;
+  background: none;
+  border: none;
+  color: var(--tinta-redup);
+  cursor: pointer;
+  padding: 0.2rem;
+  font-size: 0.8rem;
+}
+
+.urut {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 0.88rem;
+  color: var(--tinta-muda);
+}
+
+.urutLabel {
+  font-weight: 500;
+}
+
+.selectUrut {
+  font: inherit;
+  padding: 0.5rem 0.8rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--garis);
+  background: var(--kapur);
+  color: var(--tinta);
+  font-size: 0.88rem;
+  cursor: pointer;
+  transition: all var(--transisi-cepat);
+}
+
+.selectUrut:focus {
+  outline: none;
+  border-color: var(--vetiver);
+  background: var(--putih);
+}
+
+/* Status Bar */
+.statusBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 0.5rem;
+  font-size: 0.88rem;
+  color: var(--tinta-muda);
+}
+
+.bersihkanFilter {
+  background: none;
+  border: none;
+  color: var(--nilam);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Products Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.4rem;
+}
+
+/* Empty State */
+.kosong {
+  background: var(--putih);
+  border: 1px dashed var(--garis);
+  border-radius: var(--radius-lg);
+  padding: 4rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.kosongIkon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.kosong h3 {
+  font-size: 1.6rem;
+  font-family: var(--font-judul);
+}
+
+.kosong p {
+  color: var(--tinta-muda);
+  max-width: 44ch;
+}
+
+.tombolReset {
+  margin-top: 0.8rem;
+  background: var(--vetiver);
+  color: var(--putih);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-full);
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--transisi-cepat);
+}
+
+.tombolReset:hover {
+  background: var(--vetiver-gelap);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .kontrolAksi {
+    justify-content: space-between;
+  }
+  .inputCari {
+    width: 100%;
+  }
+  .inputCari:focus {
+    width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .kontrolAksi {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .selectUrut {
+    width: 100%;
+  }
+}

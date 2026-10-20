@@ -1,0 +1,283 @@
+.wadahTentang {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+/* Hero Header */
+.heroTentang {
+  background: var(--putih);
+  border: 1px solid var(--garis);
+  border-radius: var(--radius-lg);
+  padding: 3.5rem 3rem;
+  box-shadow: var(--bayangan-halus);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 900px;
+}
+
+.subTag {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 700;
+  color: var(--nilam);
+}
+
+.heroTentang h1 {
+  font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+  line-height: 1.1;
+  color: var(--tinta);
+}
+
+.lead {
+  font-size: 1.15rem;
+  color: var(--tinta-muda);
+  line-height: 1.7;
+}
+
+/* Prinsip Grid */
+.prinsipSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.8rem;
+}
+
+.kartuPrinsip {
+  background: var(--putih);
+  border: 1px solid var(--garis);
+  border-radius: var(--radius-md);
+  padding: 2rem 1.8rem;
+  box-shadow: var(--bayangan-halus);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.prinsipIkon {
+  font-size: 2rem;
+}
+
+.kartuPrinsip h3 {
+  font-size: 1.25rem;
+  color: var(--tinta);
+  font-family: var(--font-isi);
+  font-weight: 600;
+}
+
+.kartuPrinsip p {
+  font-size: 0.92rem;
+  color: var(--tinta-muda);
+  line-height: 1.6;
+}
+
+/* Peta Daerah */
+.petaSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sectionHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sectionHeader h2 {
+  font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+}
+
+.sectionHeader p {
+  font-size: 1.05rem;
+  color: var(--tinta-muda);
+}
+
+.gridDaerah {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.4rem;
+}
+
+.daerahCard {
+  background: var(--putih);
+  border: 1px solid var(--garis);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  box-shadow: var(--bayangan-halus);
+  transition: transform var(--transisi-cepat);
+}
+
+.daerahCard:hover {
+  transform: translateY(-3px);
+  border-color: var(--vetiver);
+}
+
+.daerahIcon {
+  font-size: 1.8rem;
+  background: var(--kapur);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.daerahInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.daerahInfo h4 {
+  font-size: 1.15rem;
+  color: var(--tinta);
+  font-family: var(--font-judul);
+}
+
+.daerahBahan {
+  font-size: 0.82rem;
+  color: var(--nilam);
+}
+
+.daerahInfo p {
+  font-size: 0.82rem;
+  color: var(--tinta-redup);
+  line-height: 1.5;
+  margin-top: 0.2rem;
+}
+
+/* Kartu Tugas Mahasiswa */
+.kartuTugas {
+  background: linear-gradient(135deg, #1b2723 0%, #111a17 100%);
+  color: #f7f6f1;
+  border-radius: var(--radius-lg);
+  padding: 3rem;
+  box-shadow: var(--bayangan-melayang);
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.lencanaTugas {
+  display: inline-block;
+  background: var(--emas);
+  color: #141c19;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 0.6rem;
+}
+
+.kartuTugas h2 {
+  color: #ffffff;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+}
+
+.tugasData {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-sm);
+  padding: 1.5rem;
+}
+
+.barisInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.barisInfo span {
+  font-size: 0.78rem;
+  color: #9cb0a7;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.barisInfo strong {
+  font-size: 1.05rem;
+  color: #ffffff;
+}
+
+.tabelRubrik {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius-sm);
+  padding: 1.5rem;
+}
+
+.tabelRubrik h4 {
+  color: var(--emas);
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.tabelRubrik ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  color: #c7d6cf;
+}
+
+.tabelRubrik strong {
+  color: #ffffff;
+}
+
+.disclaimer {
+  font-size: 0.82rem;
+  color: #8c9e96;
+  border-left: 2px solid var(--emas);
+  padding-left: 0.8rem;
+  line-height: 1.6;
+}
+
+.tombolKoleksi {
+  align-self: flex-start;
+  background: var(--emas);
+  color: #141c19;
+  padding: 0.85rem 1.8rem;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: all var(--transisi-cepat);
+}
+
+.tombolKoleksi:hover {
+  background: #d6a84d;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .prinsipSection, .gridDaerah {
+    grid-template-columns: 1fr 1fr;
+  }
+  .tugasData {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .prinsipSection, .gridDaerah {
+    grid-template-columns: 1fr;
+  }
+  .heroTentang {
+    padding: 2rem 1.5rem;
+  }
+  .kartuTugas {
+    padding: 2rem 1.5rem;
+  }
+}

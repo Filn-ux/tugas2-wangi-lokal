@@ -1,0 +1,155 @@
+.footer {
+  background: #141c19;
+  color: #ebe8de;
+  border-top: 1px solid #23302b;
+  margin-top: auto;
+  font-size: 0.9rem;
+}
+
+.isi {
+  width: min(1200px, 100% - 2.5rem);
+  margin-inline: auto;
+  padding-block: 4rem 3rem;
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr 1.4fr;
+  gap: 3rem;
+}
+
+.kolomBrand {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.brandTitle {
+  font-family: var(--font-judul);
+  font-size: 1.8rem;
+  color: #f7f6f1;
+  text-decoration: none;
+}
+
+.brandDeskripsi {
+  color: #a4b3ac;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.lencanaKoleksi {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.lencanaKoleksi span {
+  font-size: 0.72rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+  background: #1e2b26;
+  color: #c49b4c;
+  border: 1px solid #2a3a34;
+}
+
+.kolom h4 {
+  color: #f7f6f1;
+  font-size: 1.05rem;
+  margin-bottom: 1.2rem;
+  font-family: var(--font-isi);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.linkList a {
+  color: #a4b3ac;
+  text-decoration: none;
+  transition: color var(--transisi-cepat), transform var(--transisi-cepat);
+  display: inline-block;
+}
+
+.linkList a:hover {
+  color: #f7f6f1;
+  transform: translateX(4px);
+}
+
+.identitas {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  background: #1a2521;
+  padding: 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid #273630;
+}
+
+.namaMhs {
+  font-weight: 600;
+  color: #f7f6f1;
+  font-size: 0.95rem;
+}
+
+.nim {
+  color: #c49b4c;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.matkul {
+  font-size: 0.78rem;
+  color: #a4b3ac;
+}
+
+.semester {
+  font-size: 0.75rem;
+  color: #7a8c84;
+}
+
+.bottomBar {
+  border-top: 1px solid #222d28;
+  padding-block: 1.5rem;
+}
+
+.bottomIsi {
+  width: min(1200px, 100% - 2.5rem);
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.82rem;
+  color: #7a8c84;
+}
+
+.subtext {
+  font-size: 0.75rem;
+  color: #64756d;
+}
+
+@media (max-width: 960px) {
+  .isi {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .isi {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .bottomIsi {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

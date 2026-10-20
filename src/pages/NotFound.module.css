@@ -1,0 +1,184 @@
+.nf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 3rem;
+  width: 100%;
+}
+
+.kartuNf {
+  background: var(--putih);
+  border: 1px solid var(--garis);
+  border-radius: var(--radius-lg);
+  padding: 3.5rem 3rem;
+  box-shadow: var(--bayangan-kartu);
+  max-width: 640px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.mistVisual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.mistIkon {
+  font-size: 3rem;
+  opacity: 0.7;
+}
+
+.kode {
+  font-family: var(--font-judul);
+  font-size: clamp(4.5rem, 10vw, 7rem);
+  line-height: 0.9;
+  color: var(--nilam);
+  letter-spacing: -0.04em;
+}
+
+.teksKonten {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  width: 100%;
+}
+
+.lencanaError {
+  background: var(--emas-muda);
+  color: #795716;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+}
+
+.teksKonten h1 {
+  font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+  color: var(--tinta);
+  line-height: 1.2;
+}
+
+.pesan {
+  color: var(--tinta-muda);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 48ch;
+}
+
+.pathBox {
+  background: var(--kapur);
+  border: 1px dashed var(--garis);
+  border-radius: var(--radius-sm);
+  padding: 0.6rem 1rem;
+  font-size: 0.85rem;
+  color: var(--tinta-muda);
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pathBox code {
+  font-weight: 700;
+  color: var(--nilam);
+  word-break: break-all;
+}
+
+.saranAroma {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid var(--garis-halus);
+  padding-top: 1.2rem;
+}
+
+.saranLabel {
+  font-size: 0.82rem;
+  color: var(--tinta-redup);
+}
+
+.saranPills {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.saranPill {
+  background: var(--kapur);
+  border: 1px solid var(--garis);
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--tinta-muda);
+  transition: all var(--transisi-cepat);
+}
+
+.saranPill:hover {
+  background: var(--vetiver);
+  color: var(--putih);
+  border-color: var(--vetiver);
+}
+
+.aksi {
+  display: flex;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.utama {
+  background: var(--vetiver);
+  color: var(--putih);
+  padding: 0.85rem 1.6rem;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all var(--transisi-cepat);
+  box-shadow: 0 4px 12px rgba(45, 74, 55, 0.25);
+}
+
+.utama:hover {
+  background: var(--vetiver-gelap);
+  transform: translateY(-2px);
+}
+
+.sekunder {
+  border: 1px solid var(--tinta);
+  color: var(--tinta);
+  padding: 0.85rem 1.5rem;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all var(--transisi-cepat);
+}
+
+.sekunder:hover {
+  background: var(--garis-halus);
+}
+
+@media (max-width: 600px) {
+  .kartuNf {
+    padding: 2.5rem 1.5rem;
+  }
+  .aksi {
+    flex-direction: column;
+    width: 100%;
+  }
+  .utama, .sekunder {
+    text-align: center;
+  }
+}
